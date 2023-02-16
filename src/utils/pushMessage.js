@@ -65,7 +65,7 @@ const formatter = (type = 'info', message = '', options = {}) => {
   }
 
   if (wordWrap) {
-    style === 'markdown' && (message = message.replace(/\n/g, ' \n\n > ').replace(/ +/g, ' '))
+    style === 'markdown' && (message = message.replace(/\n/g, ' \n\n ').replace(/ +/g, ' '))
   }
 
   return {
