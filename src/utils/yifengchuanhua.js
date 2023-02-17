@@ -3,8 +3,6 @@ const { YIFENGCHUANHUA_CODE } = require('../ENV.js')
 const SUCCESS_CODE = 0
 
 const yifengchuanhua = async ({ title = '', content = '' } = {}) => {
-  console.log("head:"+title)
-  console.log("body:"+content)
   try {
     await axios
       .post('http://www.phprm.com/services/push/trigger/'+YIFENGCHUANHUA_CODE, {
